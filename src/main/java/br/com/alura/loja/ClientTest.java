@@ -62,5 +62,6 @@ public class ClientTest {
         String conteudo = target.path("/projetos/2").request().get(String.class);
         Projeto projeto = (Projeto) new XStream().fromXML(conteudo);
         Assert.assertEquals("Alura", projeto.getNome());
-    }
+    }	
+
 }
